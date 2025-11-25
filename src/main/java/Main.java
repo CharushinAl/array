@@ -2,7 +2,7 @@ import java.util.Random;
 import java.util.ArrayList;
 
 public class Main {
-    public static void main() {
+    public static void main(String[] args) {
         // Массив из 100 элементов
         int[] arr = new int[100];
 
