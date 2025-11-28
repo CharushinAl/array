@@ -5,6 +5,7 @@ public class Main {
     public static void main(String[] args) {
         // Массив из 100 элементов
         int[] arr = new int[100];
+        arr[0] = 79;
 
         // Инициализируем генератор случайных чисел
         Random random = new Random();
@@ -12,10 +13,11 @@ public class Main {
         ArrayList<Integer> indices = new ArrayList<>();
 
         // Заполняем массив сгенерированными значениями
-        for (int i = 0; i < arr.length; i++) {
+        for (int i = 1; i < arr.length; i++) {
             // Случайное число от 75 до 83 включительно
-            arr[i] = 75 + random.nextInt(9);
-            indices.add(i);
+            int box = random.nextInt(9) + 75;
+            arr[i] = box;
+            indices.add(box);
         }
 
         // Печатаем сгенерированный массив
